@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/business_tax_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo2"
+        android:layout_centerHorizontal="true"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#3F51B5"/>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/business_tax_image"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/AnnualTaxableIncome"/>
+
+
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:hint="@string/TaxableIncome"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Calculate"
+        android:padding="14dp"
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/edittext"
+        android:layout_alignRight="@+id/edittext"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_styling"
+        android:onClick="CalculateTax_Click"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/calculate"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:text="@string/AnnualIncome"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:textSize="20dp"-->
+        <!--android:id="@+id/textAnnualIncome"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/calculate"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:text="&#45;&#45;"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignRight="@+id/textAnnualIncome"-->
+        <!--android:layout_marginRight="40dp"-->
+        <!--android:textSize="20dp"-->
+        <!--android:id="@+id/valueAnnualIncome"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/textAnnualIncome"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:text="@string/TaxableAmount"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:textSize="20dp"-->
+        <!--android:id="@+id/textTaxableAmount"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/textAnnualIncome"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:text="&#45;&#45;"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignRight="@+id/textTaxableAmount"-->
+        <!--android:layout_marginRight="40dp"-->
+        <!--android:textSize="20dp"-->
+        <!--android:id="@+id/valueTaxableAmount"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/textTaxableAmount"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:text="@string/TotalTax"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:textSize="20dp"-->
+        <!--android:id="@+id/textTotalTax"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/textTaxableAmount"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:text="&#45;&#45;"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignRight="@+id/textTaxableAmount"-->
+        <!--android:layout_marginRight="40dp"-->
+        <!--android:textSize="20dp"-->
+        <!--android:id="@+id/valueTotalTax"-->
+        <!--/>-->
+
+
+</RelativeLayout>

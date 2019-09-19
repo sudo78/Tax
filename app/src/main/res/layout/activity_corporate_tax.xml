@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+    <TextView
+        android:id="@+id/TaxableProfitView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Taxable Profit: "/>
+
+    <EditText
+        android:id="@+id/TaxableProfitEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TaxableProfitView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/TaxPayableView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TaxableProfitEdit"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Tax Payable: "/>
+
+    <EditText
+        android:id="@+id/TaxPayableEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TaxPayableView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/RevenueView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TaxPayableEdit"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Revenue: "/>
+
+    <EditText
+        android:id="@+id/RevenueEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_below="@+id/RevenueView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:inputType="numberDecimal" />
+
+
+
+
+
+</RelativeLayout>

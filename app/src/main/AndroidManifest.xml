@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mytax.sudo.incometax">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.mytax.sudo.incometax.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mytax.sudo.incometax.MainActivity" />
+        <activity
+            android:name="com.mytax.sudo.incometax.NavigationDrawerActivity"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mytax.sudo.incometax.BusinessIncome"
+            android:label="Business Income"
+            android:parentActivityName="com.mytax.sudo.incometax.NavigationDrawerActivity" android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mytax.sudo.incometax.SalaryIncome"
+            android:label="Salary Income"
+            android:parentActivityName="com.mytax.sudo.incometax.NavigationDrawerActivity" android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mytax.sudo.incometax.RentalIncome"
+            android:label="RentalIncome"
+            android:parentActivityName="com.mytax.sudo.incometax.NavigationDrawerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.mytax.sudo.incometax.CoroporateTax"
+            android:label="CoroporateTax"
+            android:parentActivityName="com.mytax.sudo.incometax.NavigationDrawerActivity" android:screenOrientation="portrait">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mytax.sudo.incometax.NavigationDrawerActivity" />
+        </activity>
+        <activity android:name="com.mytax.sudo.incometax.CardViewActivity" android:screenOrientation="portrait"> </activity>
+    </application>
+
+</manifest>

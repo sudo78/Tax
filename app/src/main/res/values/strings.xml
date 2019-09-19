@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">myTax</string>
+    <string name="title_activity_navigation_drawer">Income Tax</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="RentPerMonth">Rent Per Month:</string>
+    <string name="NumberofMonths">Number of Months:</string>
+    <string name="Calculate">Calculate</string>
+    <string name="AnnualRent">Annual Rent</string>
+    <string name="MonthlyTaxLiability">Monthly Tax Liability</string>
+    <string name="AnnaulTaxLiability">Annaul Tax Liability</string>
+    <string name="MonthlyBasicSalary">Monthly Basic Salary:</string>
+    <string name="MonthlyAllowances">Monthly Allowances:</string>
+    <string name="MonthlyMedicalAllowances">Monthly Medical Allowances:</string>
+    <string name="AgeAbove60">Age Above 60</string>
+    <string name="AgeBelow60">Age Below 60</string>
+    <string name="AnnualSalary">Annual Salary</string>
+    <string name="TaxableAmount">Taxable Amount</string>
+    <string name="TaxLiability">Tax Liability"</string>
+    <string name="SeniorCitizenTaxRebate">Senior Citizen Tax Rebate</string>
+    <string name="NetTaxLiability">Net Tax Liability</string>
+    <string name="AnnualTaxableIncome">Annual Taxable Income:</string>
+    <string name="TaxableIncome">Taxable Income</string>
+    <string name="AnnualIncome">Annual Income</string>
+    <string name="TotalTax">Total Tax</string>
+</resources>

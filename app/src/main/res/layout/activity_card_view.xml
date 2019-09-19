@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/first"
+        >
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/business_tax_card_view"
+        android:layout_gravity="top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardElevation="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        card_view:cardBackgroundColor="@android:color/white">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/business_tax_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/logo2"
+                app:civ_border_width="2dp"
+                android:layout_centerHorizontal="true"
+                app:civ_border_color="#3F51B5"/>
+
+            <TextView
+                android:id="@+id/business_tax_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/business_tax_image"
+                android:textColor="@color/app_color"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Business Tax "/>
+
+            <TextView
+                android:id="@+id/business_tax_text_description_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/business_tax_text"
+                android:textColor="#303F9F"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:text="Calculate tax on your annual business income."/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/salary_tax_card_view"
+        android:layout_gravity="top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/business_tax_card_view"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardElevation="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+
+        card_view:cardBackgroundColor="@android:color/white">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/salary_tax_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/logo2"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#3F51B5"/>
+
+            <TextView
+                android:id="@+id/salary_tax_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/salary_tax_image"
+                android:textColor="#303F9F"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Salary Tax "/>
+
+            <TextView
+                android:id="@+id/salary_tax_text_description_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/salary_tax_text"
+                android:textColor="#303F9F"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:text="Calculate tax on your annual or monthly salary."/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@+id/first"
+        android:layout_marginTop="20dp"
+        >
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rental_tax_card_view"
+        android:layout_gravity="top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardElevation="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        card_view:cardBackgroundColor="@android:color/white">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rental_tax_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/logo2"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#3F51B5"/>
+
+            <TextView
+                android:id="@+id/rental_tax_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rental_tax_image"
+                android:textColor="#303F9F"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Rental Tax "/>
+
+            <TextView
+                android:id="@+id/rental_tax_text_description_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rental_tax_text"
+                android:textColor="#303F9F"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:text="Calculate tax on your annual or monthly rental income."/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/corporate_tax_card_view"
+        android:layout_gravity="top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_toRightOf="@id/rental_tax_card_view"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardElevation="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        card_view:cardBackgroundColor="@android:color/white">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/corporate_tax_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/logo2"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#3F51B5"/>
+
+            <TextView
+                android:id="@+id/corporate_tax_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/corporate_tax_image"
+                android:textColor="#303F9F"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Corporate Tax "/>
+
+            <TextView
+                android:id="@+id/corporate_tax_text_description_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/corporate_tax_text"
+                android:textColor="#303F9F"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:text="Calculate annual tax on your small or large company."/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

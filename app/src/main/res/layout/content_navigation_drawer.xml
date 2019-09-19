@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_navigation_drawer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_marginLeft="100dp">
+
+        <Button
+            android:id="@+id/businees_income_button"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Business Income"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_styling"/>
+        <Button
+            android:id="@+id/salary_income_button"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Salary Income"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_styling"
+            />
+        <Button
+            android:id="@+id/rental_income_button"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Rental Income"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_styling"
+            />
+        <Button
+        android:id="@+id/corporate_tax_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Corpotate Tax"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_styling"
+        />
+
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:text="Other"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:background="@drawable/button_styling"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:text="Other"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:background="@drawable/button_styling"-->
+            <!--/>-->
+    </LinearLayout>
+
+</RelativeLayout>

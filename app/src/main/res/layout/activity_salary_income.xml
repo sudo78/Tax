@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/salary_tax_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo2"
+        android:layout_centerHorizontal="true"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#3F51B5"/>
+
+
+    <TextView
+        android:id="@+id/SalaryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/salary_tax_image"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/MonthlyBasicSalary"/>
+
+    <EditText
+        android:id="@+id/SalaryEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SalaryTextView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/AllowanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SalaryEditText"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/MonthlyAllowances"/>
+
+    <EditText
+        android:id="@+id/AllowanceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AllowanceTextView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/MedAllowanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AllowanceEditText"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/MonthlyMedicalAllowances"/>
+
+    <EditText
+        android:id="@+id/MedAllowanceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MedAllowanceTextView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:inputType="numberDecimal"/>
+
+    <RadioButton
+        android:id="@+id/AboveRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/MedAllowanceEditText"
+        android:layout_alignTop="@+id/calculate"
+        android:text="@string/AgeAbove60" />
+
+    <RadioButton
+        android:id="@+id/BelowRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/AboveRadioButton"
+        android:layout_below="@+id/AboveRadioButton"
+        android:text="@string/AgeBelow60" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Calculate"
+        android:padding="14dp"
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/MedAllowanceEditText"
+        android:layout_alignRight="@+id/MedAllowanceEditText"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_styling"
+        android:onClick="CalculateTax_Click"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculate"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="40dp"
+        android:text="@string/AnnualSalary"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:id="@+id/textAnnualSalary"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculate"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="40dp"
+        android:text="--"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/textAnnualSalary"
+        android:layout_marginRight="40dp"
+        android:textSize="20dp"
+        android:id="@+id/valueAnnualSalary"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAnnualSalary"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:text="@string/TaxableAmount"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:id="@+id/textTaxableAmount"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAnnualSalary"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:text="--"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/textTaxableAmount"
+        android:layout_marginRight="40dp"
+        android:textSize="20dp"
+        android:id="@+id/valueTaxableAmount"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTaxableAmount"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:text="@string/TaxLiability"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:id="@+id/textTaxLiability"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTaxableAmount"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:text="--"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/textTaxLiability"
+        android:layout_marginRight="40dp"
+        android:textSize="20dp"
+        android:id="@+id/valueTaxLiability"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTaxLiability"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:text="@string/SeniorCitizenTaxRebate"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:id="@+id/textSeniorRebate"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTaxLiability"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:text="--"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/textSeniorRebate"
+        android:layout_marginRight="40dp"
+        android:textSize="20dp"
+        android:id="@+id/valueSeniorRebate"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textSeniorRebate"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:text="@string/NetTaxLiability"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:id="@+id/textNetLiability"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textSeniorRebate"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:text="--"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/textNetLiability"
+        android:layout_marginRight="40dp"
+        android:textSize="20dp"
+        android:id="@+id/valueNetLiability"
+        />
+
+
+
+
+
+</RelativeLayout>

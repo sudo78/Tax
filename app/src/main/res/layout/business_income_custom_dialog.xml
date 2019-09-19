@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculate"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:text="@string/AnnualIncome"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:id="@+id/textAnnualIncome"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculate"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:text="--"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/textAnnualIncome"
+        android:layout_marginRight="40dp"
+        android:textSize="20dp"
+        android:id="@+id/valueAnnualIncome"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAnnualIncome"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:text="@string/TaxableAmount"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:id="@+id/textTaxableAmount"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAnnualIncome"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:text="--"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/textTaxableAmount"
+        android:layout_marginRight="40dp"
+        android:textSize="20dp"
+        android:id="@+id/valueTaxableAmount"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTaxableAmount"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:text="@string/TotalTax"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:id="@+id/textTotalTax"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTaxableAmount"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:text="--"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/textTaxableAmount"
+        android:layout_marginRight="40dp"
+        android:textSize="20dp"
+        android:id="@+id/valueTotalTax"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_Ok"
+        android:background="@android:color/transparent"
+        android:text="OK"
+        android:layout_below="@id/textTotalTax"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/app_color"
+
+        />
+
+
+
+</RelativeLayout>
